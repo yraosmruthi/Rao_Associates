@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="min-h-screen relative text-white">
+    <div className="min-h-screen relative text-white overflow-hidden">
       {/* Stronger Blurred Background Image */}
       <motion.div
-        className="fixed inset-0 bg-cover bg-center z-0 text-white"
+        className="fixed inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
             "url('https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=')",
-          filter: "blur(10px)",
-          transform: "scale(1.1)",
+          filter: 'blur(10px)',
+          transform: 'scale(1.1)',
         }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -20,22 +20,22 @@ const About = () => {
 
       {/* Content Container */}
       <motion.div
-        className="relative z-10 container mx-auto px-4 py-10 text-white"
+        className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="backdrop-blur-xl shadow-xl rounded-xl p-10 max-w-6xl mt-2 mx-auto"
+          className="backdrop-blur-xl shadow-xl rounded-xl p-6 sm:p-10 max-w-6xl mx-auto"
           style={{
-            backgroundColor: 'rgba(173, 216, 230, 0.2)', // Seamless like navbar
+            backgroundColor: 'rgba(173, 216, 230, 0.2)',
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <motion.h1
-            className="text-3xl font-bold text-blue-900 mb-8 text-center"
+            className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 text-center"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -50,8 +50,8 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              <h2 className="text-2xl font-semibold text-blue-900 mb-4">Company Profile</h2>
-              <div className="space-y-4">
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Company Profile</h2>
+              <div className="space-y-4 text-sm sm:text-base">
                 <p>
                   Rao Associates Construction Engineers was established in 1995 as a professional
                   consultancy organization having no association with any contractor or other consultants.
@@ -75,10 +75,10 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <h2 className="text-2xl font-semibold text-blue-900 mb-4">Principal Consultant</h2>
-              <div className="bg-blue-100/10 bg-opacity-40 p-6 rounded-lg shadow-sm">
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Principal Consultant</h2>
+              <div className="bg-blue-100/10 bg-opacity-40 p-4 sm:p-6 rounded-lg shadow-sm text-sm sm:text-base">
                 <motion.h3
-                  className="text-xl font-bold text-blue-900 mb-3"
+                  className="text-lg sm:text-xl font-bold text-blue-900 mb-3"
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.7 }}
@@ -133,9 +133,9 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              <h2 className="text-2xl font-semibold text-blue-900 mb-4">Notable Projects</h2>
-              <div className="space-y-4">
-                {[ 
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Notable Projects</h2>
+              <div className="space-y-4 sm:space-y-6 text-sm sm:text-base">
+                {[
                   {
                     title: 'Project Engineer - "SHRUTHA COMPLEX" (1990-1992)',
                     location: 'Multistoried Complex, No.19, Primrose Road, Bangalore 560 001',
@@ -178,9 +178,9 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
             >
-              <h2 className="text-2xl font-semibold text-blue-900 mb-4">Other Consultants</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {[ 
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Other Consultants</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-sm sm:text-base">
+                {[
                   {
                     name: 'Dr. Sarangpani',
                     role: 'Structural Consultant',
@@ -218,7 +218,8 @@ const About = () => {
             </motion.section>
           </div>
 
-          <div className="mt-10 text-center text-sm text-gray-800">
+          {/* Footer */}
+          <div className="mt-10 text-center text-xs sm:text-sm text-gray-800">
             <p>© {new Date().getFullYear()} Rao Associates - Construction Engineers & Consultants</p>
           </div>
         </motion.div>
