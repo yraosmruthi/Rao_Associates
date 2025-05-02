@@ -1,0 +1,28 @@
+ 
+ html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Add these to your App.css file */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.full-page {
+  overflow: hidden;
+}
+
+/* Make sure your contact page component takes up the full viewport */
+#root > div {
+  min-height: 100vh;
+}
+
+/* Fix for route pages to ensure they take full height */
+.route-page {
+  min-height: 100vh;
+  width: 100%;
+}
