@@ -46,7 +46,7 @@ const servicePhases = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen relative text-white overflow-hidden">
+    <div className="min-h-screen relative text-black overflow-hidden">
       {/* Background */}
       <motion.div
         className="fixed inset-0 z-0"
@@ -89,7 +89,7 @@ const Services = () => {
 
           {/* Highlighted Service */}
           <motion.div
-            className="bg-blue-100/10 backdrop-blur-md border border-blue-200/30 text-white p-4 sm:p-6 rounded-md mb-10 text-center transition-all duration-300 hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
+            className="bg-blue-100/10 backdrop-blur-md border border-blue-200/30 text-black p-4 sm:p-6 rounded-md mb-10 text-center transition-all duration-300 hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -105,7 +105,7 @@ const Services = () => {
             {servicePhases.map((phase, index) => (
               <motion.div
                 key={index}
-                className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-md border border-white/20 text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
+                className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-md border border-white/20 text-black transition-all duration-300 hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 + index * 0.3 }}

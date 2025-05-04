@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="min-h-screen relative text-white overflow-hidden">
+    <div className="min-h-screen relative text-black overflow-hidden">
       {/* Stronger Blurred Background Image */}
       <motion.div
         className="fixed inset-0 bg-cover bg-center z-0"
@@ -20,7 +20,7 @@ const About = () => {
 
       {/* Content Container */}
       <motion.div
-        className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-10 text-white"
+        className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-10 text-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -43,7 +43,7 @@ const About = () => {
             About Us
           </motion.h1>
 
-          <div className="space-y-10 text-white">
+          <div className="space-y-10 text-black">
             {/* Company Profile */}
             <motion.section
               initial={{ opacity: 0 }}
@@ -107,11 +107,11 @@ const About = () => {
                     <div className="font-medium mb-2">Professional Credentials:</div>
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Panel Valuer for All Nationalized Banks & Financial Institutions Since 1995</li>
-                      <li>Membership No. with Institute of Engineers: M-121057-4</li>
-                      <li>Life Membership Number with Institute of Valuers: F-5790</li>
-                      <li>Chartered Engineer (India): AM063948-8</li>
-                      <li>CBDT Reg No: CAT_1/106/20013-14/CC-111</li>
-                      <li>IBBI REGISTERED VALUER: ibbi/rv/02/1014</li>
+                      <li>IBBI REGISTERED VALUER</li>
+                      
+                      <li>Chartered Engineer (India)</li>
+                      
+                      <li>IBBI REGISTERED VALUER</li>
                     </ul>
                   </motion.div>
 
@@ -121,7 +121,7 @@ const About = () => {
                     transition={{ duration: 1, delay: 0.7 }}
                   >
                     <div className="font-medium mb-2">Area of Specialization:</div>
-                    <p>Valuation Of Land & Building & Agricultural Lands</p>
+                    <p>Valuation Of Land & Building </p>
                   </motion.div>
                 </div>
               </div>
@@ -136,11 +136,7 @@ const About = () => {
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Notable Projects</h2>
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base">
                 {[
-                  {
-                    title: 'Project Engineer - "SHRUTHA COMPLEX" (1990-1992)',
-                    location: 'Multistoried Complex, No.19, Primrose Road, Bangalore 560 001',
-                    cost: '2 Crore',
-                  },
+                  
                   {
                     title: 'Independent Commercial Complex (1992-1995)',
                     location: '"Mythri Complex" next to service Bus stand Udupi',
@@ -166,56 +162,13 @@ const About = () => {
                   >
                     <h3 className="font-bold text-blue-800">{project.title}</h3>
                     <p>{project.location}</p>
-                    <p className="text-white font-medium">Project Cost: {project.cost}</p>
+                    <p className="text-black font-medium">Project Cost: {project.cost}</p>
                   </motion.div>
                 ))}
               </div>
             </motion.section>
 
-            {/* Other Consultants */}
-            <motion.section
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
-            >
-              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Other Consultants</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-sm sm:text-base">
-                {[
-                  {
-                    name: 'Dr. Sarangpani',
-                    role: 'Structural Consultant',
-                    details: [
-                      'Former Prof and Head, Dept of Civil',
-                      'National Institute of Engineering, Mysore',
-                    ],
-                  },
-                  {
-                    name: 'Padmanab',
-                    role: 'Quantity Surveyor and Project Engineer',
-                    details: [],
-                  },
-                  {
-                    name: 'Kumar',
-                    role: 'Quantity Surveyor and Field Engineer',
-                    details: [],
-                  },
-                ].map((consultant, i) => (
-                  <motion.div
-                    key={i}
-                    className="bg-blue-100/10 bg-opacity-50 p-4 rounded-lg"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 1.1 }}
-                  >
-                    <h3 className="font-bold text-blue-800">{consultant.name}</h3>
-                    <p>{consultant.role}</p>
-                    {consultant.details.map((line, j) => (
-                      <p key={j}>{line}</p>
-                    ))}
-                  </motion.div>
-                ))}
-              </div>
-            </motion.section>
+           
           </div>
 
           {/* Footer */}
