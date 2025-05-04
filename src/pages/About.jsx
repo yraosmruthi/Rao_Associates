@@ -44,27 +44,50 @@ const About = () => {
           </motion.h1>
 
           <div className="space-y-10 text-black">
-            {/* Company Profile */}
+            {/* Valuation Services Block */}
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
+              
+              <div className="bg-blue-100/10 backdrop-blur-md p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105">
+                <motion.h3
+                  className="text-lg sm:text-xl font-bold text-blue-900 mb-3 text-center"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.7 }}
+                >
+                  Government-Approved Valuations
+                </motion.h3>
+                <p className="text-sm sm:text-base text-gray-800 text-center">
+                  We specialize in government-recognized valuations for immovable properties such as land, buildings, and assets. Our
+                  services support loan applications, legal compliance, asset declarations, and investment analysis.
+                </p>
+              </div>
+            </motion.section>
+
+            {/* Company Profile */}
+            <motion.section
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Company Profile</h2>
               <div className="space-y-4 text-sm sm:text-base">
                 <p>
-                  Rao Associates Construction Engineers was established in 1995 as a professional
-                  consultancy organization having no association with any contractor or other consultants.
+                  Rao Associates Construction Engineers was established in 1995 as a professional consultancy organization having no
+                  association with any contractor or other consultants.
                 </p>
                 <p>
-                  Rao Associates is a proprietary concern with offices in Mysore & Mangalore. Currently,
-                  we are rendering Total Project Management / Construction Management services to many
-                  projects in Karnataka. We are also providing Structural design services to many projects.
+                  Rao Associates is a proprietary concern with offices in Mysore and Mangalore. We are currently providing valuation
+                  services for immovable properties, along with Total Project Management / Construction Management services across various
+                  projects in Karnataka. We also offer Structural Design services to a wide range of clients.
                 </p>
                 <p>
-                  Its constituent members are all highly educated professionals with vast experience in
-                  handling diverse projects. Our staff is ably supported by experts of various disciplines
-                  and associated with organizations that enable us to adopt state-of-the-art technologies.
+                  Its constituent members are all highly educated professionals with vast experience in handling diverse projects. Our
+                  staff is ably supported by experts of various disciplines and associated with organizations that enable us to adopt
+                  state-of-the-art technologies.
                 </p>
               </div>
             </motion.section>
@@ -73,10 +96,10 @@ const About = () => {
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              transition={{ duration: 1, delay: 0.6 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Principal Consultant</h2>
-              <div className="bg-blue-100/10 bg-opacity-40 p-4 sm:p-6 rounded-lg shadow-sm text-sm sm:text-base">
+              <div className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm text-sm sm:text-base transition-all hover:shadow-blue-200 hover:scale-105">
                 <motion.h3
                   className="text-lg sm:text-xl font-bold text-blue-900 mb-3"
                   initial={{ x: -50, opacity: 0 }}
@@ -108,10 +131,7 @@ const About = () => {
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Panel Valuer for All Nationalized Banks & Financial Institutions Since 1995</li>
                       <li>IBBI REGISTERED VALUER</li>
-                      
                       <li>Chartered Engineer (India)</li>
-                      
-                      <li>IBBI REGISTERED VALUER</li>
                     </ul>
                   </motion.div>
 
@@ -121,7 +141,7 @@ const About = () => {
                     transition={{ duration: 1, delay: 0.7 }}
                   >
                     <div className="font-medium mb-2">Area of Specialization:</div>
-                    <p>Valuation Of Land & Building </p>
+                    <p>Valuation Of Land & Building</p>
                   </motion.div>
                 </div>
               </div>
@@ -136,39 +156,48 @@ const About = () => {
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Notable Projects</h2>
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base">
                 {[
-                  
+                  {
+                    title: 'BM Habitat Mall, Mysore',
+                    location: 'Valuation of Mall for commercial purposes',
+                  },
+                  {
+                    title: 'Mall of Mysore',
+                    location: 'Valuation for commercial property financing',
+                  },
+                  {
+                    title: 'Sepoy Grande',
+                    location: 'Valuation for real estate assessment',
+                  },
+                  {
+                    title: 'Sandesh The Prince Hotel, Mysore',
+                    location: 'Valuation of Hotel property for investment analysis',
+                  },
                   {
                     title: 'Independent Commercial Complex (1992-1995)',
                     location: '"Mythri Complex" next to service Bus stand Udupi',
-                    cost: '2.5 Crore',
                   },
                   {
                     title: 'Construction of S.D.M. & MMK College (1995-1997)',
                     location: 'For Dharmasthala Educational Society at Krishnamurthypuram, Mysore',
-                    cost: '1.5 Crore',
                   },
                   {
                     title: 'Residential & Commercial Complex (1998-2004)',
                     location: '92 Residential Flats & 50,000 sq ft Commercial Complex, No. 50, Kantharaj Urs Road, Mysore',
-                    cost: '16 Crore',
                   },
                 ].map((project, i) => (
                   <motion.div
                     key={i}
-                    className="bg-blue-100/10 bg-opacity-50 p-4 rounded-lg"
+                    className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.9 }}
                   >
                     <h3 className="font-bold text-blue-800">{project.title}</h3>
                     <p>{project.location}</p>
-                    <p className="text-black font-medium">Project Cost: {project.cost}</p>
                   </motion.div>
                 ))}
               </div>
             </motion.section>
-
-           
           </div>
 
           {/* Footer */}

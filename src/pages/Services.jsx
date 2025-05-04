@@ -1,49 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const servicePhases = [
-  {
-    title: 'Pre-Bid Phase',
-    points: [
-      'Feasibility studies',
-      'Consultant appraisal and selection',
-      'Cost analyses and budget estimates',
-      'Structural designs',
-      'Government licensing coordination',
-      'Pre-construction planning services',
-    ],
-  },
-  {
-    title: 'Post-Bid / Pre-Construction Phase',
-    points: [
-      'Tender scrutiny',
-      'Contract negotiation assistance',
-      'Legal documentation',
-      'Scheduling',
-      'Value engineering',
-    ],
-  },
-  {
-    title: 'Construction Phase',
-    points: [
-      'Project scheduling (CPM)',
-      'Cash-flow charts',
-      'Material requirement schedules',
-      'Drawing coordination',
-      'Quality monitoring',
-      'Progress reporting',
-    ],
-  },
-  {
-    title: 'Post-Construction Phase',
-    points: [
-      'Machinery installation coordination',
-      'Warranty documentation',
-      'Compliance monitoring',
-    ],
-  },
-];
-
 const Services = () => {
   return (
     <div className="min-h-screen relative text-black overflow-hidden">
@@ -61,12 +18,12 @@ const Services = () => {
               "url('https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=')",
           }}
         />
-        <div className="absolute inset-0 bg-blue-100/30 backdrop-blur-sm " /> 
+        <div className="absolute inset-0 bg-blue-100/30 backdrop-blur-sm" />
       </motion.div>
 
       {/* Content */}
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
+        className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
@@ -87,51 +44,72 @@ const Services = () => {
             Our Services
           </motion.h1>
 
-          {/* Highlighted Service */}
-          <motion.div
-            className="bg-blue-100/10 backdrop-blur-md border border-blue-200/30 text-black p-4 sm:p-6 rounded-md mb-10 text-center transition-all duration-300 hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2">Government-Approved Valuations</h2>
-            <p className="text-sm sm:text-base">
-              We specialize in government-approved valuations for immovable properties, supporting loan applications, asset assessments, and legal compliance.
-            </p>
-          </motion.div>
+          <div className="grid gap-6 grid-cols-1">
+            {/* Service Card 1 */}
+            <motion.div
+              className="bg-blue-100/10 backdrop-blur-md p-6 rounded-lg border border-blue-200 transition hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">
+                Government-Approved Valuation Services
+              </h2>
+              <p className="text-sm sm:text-base text-gray-800">
+                Led by <strong>Mr. D.V. Yogisha Rao</strong>, a certified valuer with over <strong>30 years of experience</strong> in the field,
+                we offer precise and government-recognized valuations for immovable properties. Our services support loan applications,
+                legal compliance, asset declarations, and investment analysis.
+              </p>
+            </motion.div>
 
-          {/* Service Grid */}
-          <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-            {servicePhases.map((phase, index) => (
-              <motion.div
-                key={index}
-                className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-md border border-white/20 text-black transition-all duration-300 hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.8 + index * 0.3 }}
-              >
-                <motion.h2
-                  className="text-lg sm:text-xl font-semibold text-blue-900 mb-4"
-                  initial={{ y: -30, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.7 }}
-                >
-                  {phase.title}
-                </motion.h2>
-                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base">
-                  {phase.points.map((point, i) => (
-                    <motion.li
-                      key={i}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.5, delay: 1 + index * 0.3 + i * 0.2 }}
-                    >
-                      {point}
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+            {/* Service Card 2 */}
+            <motion.div
+              className="bg-blue-100/10 backdrop-blur-md p-6 rounded-lg border border-blue-200 transition hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+            >
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">
+                Estimation of Land & Built-Up Area
+              </h2>
+              <p className="text-sm sm:text-base text-gray-800">
+                We provide accurate estimations for land and constructed areas, crucial for property documentation, pricing, taxation,
+                and legal processing. Our assessments are backed by technical expertise and thorough on-site inspections.
+              </p>
+            </motion.div>
+
+            {/* Service Card 3 */}
+            <motion.div
+              className="bg-blue-100/10 backdrop-blur-md p-6 rounded-lg border border-blue-200 transition hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+            >
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">
+                Valuation Partner for Banks & Financial Institutions
+              </h2>
+              <p className="text-sm sm:text-base text-gray-800">
+                Rao Associates is empaneled with most <strong>national banks, NBFCs, and PSUs in Mysore</strong> for property valuation.
+                We assist in asset appraisal for mortgage approvals, refinancing, and secured lending.
+              </p>
+            </motion.div>
+
+            {/* Service Card 4 */}
+            <motion.div
+              className="bg-blue-100/10 backdrop-blur-md p-6 rounded-lg border border-blue-200 transition hover:shadow-lg hover:shadow-blue-200 hover:scale-105"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 1.1 }}
+            >
+              <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">
+                Construction Management & Project Execution
+              </h2>
+              <p className="text-sm sm:text-base text-gray-800">
+                With decades of industry experience, we deliver Total Project Management and Construction Management services
+                across Karnataka. From pre-construction planning and budgeting to execution and handover, we ensure quality, timeline,
+                and cost control for every project.
+              </p>
+            </motion.div>
           </div>
 
           <div className="mt-10 text-center text-xs sm:text-sm text-gray-800">
