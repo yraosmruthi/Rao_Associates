@@ -53,10 +53,10 @@ const Services = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">
-                Government-Approved Valuation Services
+                Valuation Services
               </h2>
               <p className="text-sm sm:text-base text-gray-800">
-                Led by <strong>Mr. D.V. Yogisha Rao</strong>, a certified valuer with over <strong>30 years of experience</strong> in the field,
+                Led by <strong>Mr. D.V. Yogisha Rao</strong>, a government approved certified valuer with over <strong>30 years of experience</strong> in the field,
                 we offer precise and government-recognized valuations for immovable properties. Our services support loan applications,
                 legal compliance, asset declarations, and investment analysis.
               </p>

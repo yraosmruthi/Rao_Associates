@@ -26,7 +26,7 @@ const HomeName = () => {
       <div className="mt-24 sm:mt-32 md:mt-60 px-2 sm:px-4">
         <motion.h1
           variants={itemVariants}
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-blue-950 drop-shadow-md"
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 text-blue-950 drop-shadow-md"
         >
           RAO ASSOCIATES
         </motion.h1>
@@ -44,7 +44,7 @@ const HomeName = () => {
         >
           Owned and operated by <strong className="text-slate-900">DV Yogisha Rao</strong>,
           <br />
-          <span className="block">Government-Approved Valuer and Chartered Accountant.</span>
+          <span className="block">Government-Approved Valuer and Chartered Engineer.</span>
         </motion.p>
       </div>
 

@@ -35,7 +35,7 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <motion.h1
-            className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 text-center"
+            className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 sm:mb-8 text-center"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -76,8 +76,7 @@ const About = () => {
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Company Profile</h2>
               <div className="space-y-4 text-sm sm:text-base">
                 <p>
-                  Rao Associates Construction Engineers was established in 1995 as a professional consultancy organization having no
-                  association with any contractor or other consultants.
+                  Rao Associates  was established in 1995 as a professional consultancy organization.
                 </p>
                 <p>
                   Rao Associates is a proprietary concern with offices in Mysore and Mangalore. We are currently providing valuation
@@ -147,6 +146,7 @@ const About = () => {
               </div>
             </motion.section>
 
+           
             {/* Notable Projects */}
             <motion.section
               initial={{ opacity: 0 }}
@@ -154,50 +154,72 @@ const About = () => {
               transition={{ duration: 1, delay: 0.8 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Notable Projects</h2>
-              <div className="space-y-4 sm:space-y-6 text-sm sm:text-base">
-                {[
-                  {
-                    title: 'BM Habitat Mall, Mysore',
-                    location: 'Valuation of Mall for commercial purposes',
-                  },
-                  {
-                    title: 'Mall of Mysore',
-                    location: 'Valuation for commercial property financing',
-                  },
-                  {
-                    title: 'Sepoy Grande',
-                    location: 'Valuation for real estate assessment',
-                  },
-                  {
-                    title: 'Sandesh The Prince Hotel, Mysore',
-                    location: 'Valuation of Hotel property for investment analysis',
-                  },
-                  {
-                    title: 'Independent Commercial Complex (1992-1995)',
-                    location: '"Mythri Complex" next to service Bus stand Udupi',
-                  },
-                  {
-                    title: 'Construction of S.D.M. & MMK College (1995-1997)',
-                    location: 'For Dharmasthala Educational Society at Krishnamurthypuram, Mysore',
-                  },
-                  {
-                    title: 'Residential & Commercial Complex (1998-2004)',
-                    location: '92 Residential Flats & 50,000 sq ft Commercial Complex, No. 50, Kantharaj Urs Road, Mysore',
-                  },
-                ].map((project, i) => (
-                  <motion.div
-                    key={i}
-                    className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.9 }}
-                  >
-                    <h3 className="font-bold text-blue-800">{project.title}</h3>
-                    <p>{project.location}</p>
-                  </motion.div>
-                ))}
+
+              {/* Valuation Projects */}
+              <div className="mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-blue-800 mb-4">Valuation Projects</h3>
+                <div className="space-y-4 sm:space-y-6 text-sm sm:text-base">
+                  {[
+                    {
+                      title: 'Jubilant Pharmova Limited',
+                      location: 'Nanjangud',
+                    },
+                    {
+                      title: 'Kousalya Commercial Complex',
+                      location: 'Vinoba Road, Devaraja Mohalla, Mysore – 570005',
+                    },
+                    {
+                      title: 'Payana Car Museum',
+                      location: 'Bengaluru – Mysuru Expressway, Brahmapura, Srirangapatna',
+                    },
+                  ].map((project, i) => (
+                    <motion.div
+                      key={i}
+                      className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.9 }}
+                    >
+                      <h3 className="font-bold text-blue-800">{project.title}</h3>
+                      <p>{project.location}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Commercial Projects */}
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-blue-800 mb-4">Commercial Projects</h3>
+                <div className="space-y-4 sm:space-y-6 text-sm sm:text-base">
+                  {[
+                    {
+                      title: 'Mytri Arcade and Complex',
+                      location: '92 residential flats and 64,000 sqft of commercial complex located in Saraswathipuram, Mysore',
+                    },
+                    {
+                      title: 'SDM and MMK College for Women',
+                      location: 'Jhansi Rani Lakshmi Bai Road, Krishnamurthy Puram, Mysuru',
+                    },
+                    {
+                      title: 'Prasadhini Enterprises (Formerly Mega More)',
+                      location: 'Narayana Shastri Road, Mysore',
+                    },
+                  ].map((project, i) => (
+                    <motion.div
+                      key={i}
+                      className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.9 }}
+                    >
+                      <h3 className="font-bold text-blue-800">{project.title}</h3>
+                      <p>{project.location}</p>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </motion.section>
+
           </div>
 
           {/* Footer */}

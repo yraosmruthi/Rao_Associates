@@ -20,7 +20,7 @@ const Nav = () => {
         <div>
           <NavLink
             to="/"
-            className="text-lg sm:text-xl font-bold tracking-wide text-slate-950 drop-shadow-md hover:text-blue-600 transition-colors"
+            className="text-lg sm:text-l  tracking-wide text-slate-950 drop-shadow-md hover:text-blue-600 transition-colors"
           >
             Rao Associates
           </NavLink>
