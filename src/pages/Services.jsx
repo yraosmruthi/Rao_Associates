@@ -9,13 +9,13 @@ const Services = () => {
         className="fixed inset-0 z-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.4 }}
       >
         <div
-          className="absolute inset-0 bg-cover bg-center scale-110 blur-sm"
+          className="absolute inset-0 bg-cover bg-center bg-black/[0.5] scale-110 blur-sm"
           style={{
             backgroundImage:
-              "url('https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=')",
+              "url('https://www.alm.com/wp-content/uploads/2017/09/Industry-Real-Estate.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-blue-100/30 backdrop-blur-sm" />
@@ -26,20 +26,20 @@ const Services = () => {
         className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
+        transition={{ duration: 0.4, delay: 0.3 }}
       >
         <motion.div
           className="backdrop-blur-xl shadow-xl rounded-xl p-6 sm:p-10"
           style={{ backgroundColor: 'rgba(173, 216, 230, 0.3)' }}
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.4 }}
         >
           <motion.h1
             className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-8 text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
           >
             Our Services
           </motion.h1>
