@@ -16,18 +16,18 @@ const Nav = () => {
       }}
       className="font-Sans text-white px-3 py-3 fixed w-full top-0 z-50"
     >
-      <div className="flex flex-row justify-between ml-6 mt-2">
+      <div className="flex flex-row justify-between ml-2 md:ml-6 mt-2">
         <div>
           <NavLink
             to="/"
-            className="text-lg sm:text-l  tracking-wide text-slate-950 drop-shadow-md hover:text-blue-600 transition-colors"
+            className="text-lg sm:text-md tracking-wide text-slate-950 drop-shadow-md hover:text-blue-600 transition-colors font-bold mr-1"
           >
             Rao Associates
           </NavLink>
         </div>
 
         <div>
-          <div className="flex flex-row gap-8 mr-15">
+          <div className="flex flex-row gap-3 md:gap-8 md:mr-15 text-sm md:text-md">
             <NavLink
               to="/"
               className={({ isActive }) =>
