@@ -35,10 +35,10 @@ const Contact = () => {
     <div
       className="h-screen w-screen fixed inset-0 bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=')" 
+        backgroundImage: "url('https://www.alm.com/wp-content/uploads/2017/09/Industry-Real-Estate.jpg')" 
       }}
     >
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/[0.3]" />
       
       <div className="relative z-10 flex items-center justify-center h-full">
         <motion.div 
