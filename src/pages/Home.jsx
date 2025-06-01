@@ -8,7 +8,7 @@ const Home = () => {
         className="w-full h-screen flex flex-col md:flex-row items-center md:items-stretch"
         style={{
           backgroundImage:
-            "url('https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=')",
+            "url('https://www.alm.com/wp-content/uploads/2017/09/Industry-Real-Estate.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
