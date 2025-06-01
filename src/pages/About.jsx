@@ -6,16 +6,16 @@ const About = () => {
     <div className="min-h-screen relative text-black overflow-hidden">
       {/* Stronger Blurred Background Image */}
       <motion.div
-        className="fixed inset-0 bg-cover bg-center z-0"
+        className="fixed inset-0 bg-cover bg-center z-0 bg-black/[0.5]"
         style={{
           backgroundImage:
-            "url('https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=')",
+            "url('https://www.alm.com/wp-content/uploads/2017/09/Industry-Real-Estate.jpg')",
           filter: 'blur(10px)',
           transform: 'scale(1.1)',
         }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.5 }}
       />
 
       {/* Content Container */}
@@ -23,7 +23,7 @@ const About = () => {
         className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-10 text-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.4 }}
       >
         <motion.div
           className="backdrop-blur-xl shadow-xl rounded-xl p-6 sm:p-10 max-w-6xl mx-auto"
@@ -32,13 +32,13 @@ const About = () => {
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.4 }}
         >
           <motion.h1
             className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 sm:mb-8 text-center"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.35 }}
           >
             About Us
           </motion.h1>
@@ -48,7 +48,7 @@ const About = () => {
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               
               <div className="bg-blue-100/10 backdrop-blur-md p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105">
@@ -56,7 +56,7 @@ const About = () => {
                   className="text-lg sm:text-xl font-bold text-blue-900 mb-3 text-center"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.7 }}
+                  transition={{ duration: 0.35 }}
                 >
                   Government-Approved Valuations
                 </motion.h3>
@@ -71,7 +71,7 @@ const About = () => {
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Company Profile</h2>
               <div className="space-y-4 text-sm sm:text-base">
@@ -95,7 +95,7 @@ const About = () => {
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Principal Consultant</h2>
               <div className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm text-sm sm:text-base transition-all hover:shadow-blue-200 hover:scale-105">
@@ -103,7 +103,7 @@ const About = () => {
                   className="text-lg sm:text-xl font-bold text-blue-900 mb-3"
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7 }}
+                  transition={{ duration: 0.5 }}
                 >
                   D V YOGISHA RAO
                 </motion.h3>
@@ -112,7 +112,7 @@ const About = () => {
                     className="md:flex md:items-start md:gap-4"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
                   >
                     <div className="font-medium w-[120px]">Education:</div>
                     <div className="space-y-1">
@@ -124,7 +124,7 @@ const About = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.6 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
                   >
                     <div className="font-medium mb-2">Professional Credentials:</div>
                     <ul className="list-disc pl-5 space-y-1">
@@ -137,7 +137,7 @@ const About = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.7 }}
+                    transition={{ duration: 0.4, delay: 0.3 }}
                   >
                     <div className="font-medium mb-2">Area of Specialization:</div>
                     <p>Valuation Of Land & Building</p>
@@ -151,7 +151,7 @@ const About = () => {
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.8 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">Notable Projects</h2>
 
@@ -178,7 +178,7 @@ const About = () => {
                       className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      transition={{ duration: 1, delay: 0.9 }}
+                      transition={{ duration: 0.4, delay: i* 0.1 }}
                     >
                       <h3 className="font-bold text-blue-800">{project.title}</h3>
                       <p>{project.location}</p>
@@ -210,7 +210,7 @@ const About = () => {
                       className="bg-blue-100/10 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-sm transition-all hover:shadow-blue-200 hover:scale-105"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      transition={{ duration: 1, delay: 0.9 }}
+                      transition={{ duration: 0.4, delay: i* 0.1 }}
                     >
                       <h3 className="font-bold text-blue-800">{project.title}</h3>
                       <p>{project.location}</p>
